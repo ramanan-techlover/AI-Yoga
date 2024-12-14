@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoga Asanas Web Application</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #ff00cc, #3333ff); /* Disco background gradient */
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        opacity: 0.9;
+    }
+    h1 {
+        text-align: center;
+        color: #fff;
+    }
+    .asana-list {
+        list-style: none;
+        padding: 0;
+    }
+    .asana-item {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease; /* Color transition */
+    }
+    .asana-item:hover {
+        background-color: #ffcc00; /* New background color on hover */
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #ffcc00;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 40%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, background-color 0.8s ease; /* Color and transform transition */
+    }
+    .button:hover {
+        transform: translateY(-5px);
+        background-color: #ff6600; /* New background color on hover */
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        transition: background-color 0.3s ease; /* Color transition */
+    }
+    .flex-item {
+        flex: 1;
+        padding: 10px;
+        border: solid 1px green;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: background-color 0.3s ease; /* Color transition */
+    }
+    .flex-item:hover {
+        background-color: #ffcc00; /* New background color on hover */
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Yoga Asanas</h1>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h2>Downward Facing Dog</h2>
+            <p>Downward Facing Dog, or Adho Mukha Svanasana in Sanskrit, is a foundational yoga pose that stretches the entire body, particularly the back, hamstrings, calves, and shoulders.</p>
+        </div>
+        <div class="flex-item">
+            <h2>Tree Pose</h2>
+            <p>Tree Pose, or Vrksasana in Sanskrit, is a standing balance pose that strengthens the legs, improves concentration, and promotes stability and balance.</p>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h2>Warrior II</h2>
+            <p>Warrior II, or Virabhadrasana II in Sanskrit, is a standing yoga pose that strengthens the legs, opens the hips and chest, and improves concentration and focus.</p>
+        </div>
+        <div class="flex-item">
+            <h2>Child's Pose</h2>
+            <p>Child's Pose, or Balasana in Sanskrit, is a resting yoga pose that stretches the spine, hips, and thighs while promoting relaxation and stress relief.</p>
+        </div>
+    </div>
+    <a class="button" href = 'http://localhost:8501'>Start Yoga Session</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.button').tilt({
+            scale: 1.1
+        });
+    });
+</script>
+</body>
+</html>
